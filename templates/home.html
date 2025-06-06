@@ -1,0 +1,309 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="Logo">monali</div>
+        <div class="nav_list">
+            <ul class="nav_link">
+                <li><a href="#home"></a>Home</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Career</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="down_btn">
+            <button class="d_btn"><a href="./static/Monali Resume.pdf" download>Download CV</a> <i class="fa-solid fa-file"></i></button>
+        </div>
+    </nav>
+   
+    <main>
+        <section class="hero" id="home">
+            <div class="lefthero">
+                <div class="toplayer">
+                    <span id="span">Monali Maheswata Mohanty</span>
+                    <h1>i'm</h1>
+                    <h2>Backend Developer</h2>
+                    <p>Experienced backend developer with a passion for creating visually stunning and user-friendly websites.</p>
+                    <div class="bottomlayer">
+                        <button class="hirebtn">Hire Me</button>
+                        <button class="d_btn"><a href="./static/Monali Resume.pdf" download>Download CV</a> <i class="fa-solid fa-file"></i></button>
+                    </div>
+                </div>
+                <div class="logo_layer">
+                    <div class="logo"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="logo"><a href="https://www.linkedin.com/in/monali-maheswata-mohanty/"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                    <div class="logo"><a href="https://www.google.com/"><i class="fa-solid fa-basketball"></i></a></div>
+                    <div class="logo"><a href="https://github.com/Monamona2001"><i class="fa-brands fa-github"></i></a></div>
+                </div>
+            </div>
+            <div class="righthero">
+                <div class="image"><img src="./static/monali.jpg" alt="" ></div>
+            </div>
+        </section>
+        <section class="scroll_box">
+            <button class="s_btn"><i class="fa-solid fa-computer-mouse"></i>scroll down</button>
+        </section>
+        
+        <section class="about_container" id="about">
+            <h2>About Me</h2>
+            <div class="box">
+                <div class="right_box">
+                    <h1>My Introduction</h1>
+                    <p>A highly motivated and detail-oriented PythonDeveloper (Fresher) with a strong foundation inprogramming, data structures, and web development.Proficient in Python with hands-on experience inbuilding small to mid-scale projects, including webapplications using Django. Enthusiastic aboutsolving real-world problems through code andcontinuously learning new technologies. A quicklearner with good problem-solving skills and theability to work collaboratively in teamenvironments.</p>
+                    <button class="btn"><a href="./static/Monali Resume.pdf" download>Download CV</a><i class="fa-solid fa-file"></i></button>
+                </div>
+                <div class="left_box">
+                    <div class="skils">
+                        <h3>FRONTEND <i class="fa-solid fa-desktop"></i></h3>
+                        <p class="p">HTML</p>
+                        <p>CSS</p>
+                        <p>Js</p>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="skils">
+                        <h3>BACKEND <i class="fa-solid fa-server"></i></h3>
+                        <p>Python</p>
+                        <p>Django</p>
+                    </div>
+                    <div class="skils">
+                        <h3>DATABASE <i class="fa-solid fa-database"></i></h3>
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div style="display: flex; justify-content: center; gap: 10px;">
+                    <h1>My</h1>
+                    <h1 class="p_name">Projects</h1>
+                </div>
+                <p class="description">Here are some of my recent projects. Each one was carefully crafted to solve specific problems and deliver value.</p>
+                
+                <div class="projects">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2024/04/03/18/55/ai-generated-8673603_1280.png" alt="Cafe Management System">
+                    <div class="card-content">
+                    <h3>Cafe Management System</h3>
+                    <p>A full-featured online store with product listings, cart functionality, and secure checkout.</p>
+                    <div class="tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                    <div class="links">
+                        <a href="#">🔗 Live Demo</a>
+                        <p><i class="fa-brands fa-github"></i> github</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/23/00/58/record-player-1851576_1280.jpg" alt="Music App Design">
+                    <div class="card-content">
+                    <h3>Music App</h3>
+                    <p>A productivity application for teams to collaborate on projects and track progress.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                    <div class="links">
+                        <a href="#">🔗 Live Demo</a>
+                        <p><i class="fa-brands fa-github"></i> github</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1469285994282-454ceb49e63c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnxlbnwwfHwwfHx8MA%3D%3D" alt="car rental app">
+                    <div class="card-content">
+                    <h3>Car Rental App</h3>
+                    <p>Real-time weather information with 5-day forecast and location-based services.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Django</span>
+                    </div>
+                    <div class="links">
+                        <a href="#">🔗 Live Demo</a>
+                        <p><i class="fa-brands fa-github"></i> github</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <div class="career">
+                <h1>My</h1>
+                <h1>Career</h1>
+            </div>
+            <p class="para">My professional path and educational background that shaped my expertise.</p>
+            <h2 class="e_logo"><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+            <div class="line">
+                <div class="box1">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>MCA</h3>
+                        <a href="#">CIME</a>
+                        <span class="date">2023 - 2025</span>
+                        <p>I hold a Master of Computer Applications (MCA), where I gained a solid foundation in software development, programming languages, and web technologies.</p>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>Bsc.</h3>
+                        <a href="#">Govt. Women's college</a>
+                        <span class="date">2018 - 2021</span>
+                        <p>I completed my graduation with honors in Geology, which sharpened my analytical and research skills.</p>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>Intermediate</h3>
+                        <a href="#">KBRC</a>
+                        <span class="date">2016 - 2018</span>
+                        <p>I also successfully completed my Intermediate education with a strong academic record, laying the groundwork for my technical and logical abilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div id="c_box">
+                <div id="top">
+                    <h1>Get In</h1>
+                    <h1>Touch</h1>
+                </div>
+                <p class="para">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+                <div id="bottom">
+                    <div class="left">
+                        <div class="upper">
+                            <h2>Contact Information</h2>
+                            <div class="e_btn">
+                                <div id="button"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>monalimohanty200@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="e_btn">
+                                <div id="button"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <p>8599094263</p>
+                                </div>
+                            </div>
+                            <div class="e_btn">
+                                <div id="button"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <strong>Location</strong>
+                                    <p>BBSR</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3>Follow Me</h3>
+                            <div class="logo_layer">
+                                <div class="logos"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                                <div class="logos"><a href="https://www.linkedin.com/in/monali-maheswata-mohanty/"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                <div class="logos"><a href="https://www.google.com/"><i class="fa-solid fa-basketball"></i></a></div>
+                                <div class="logos"><a href="https://github.com/Monamona2001"><i class="fa-brands fa-github"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2>Send Me a Message</h2>
+                        <form method="POST" action="/contact/">
+                            {% csrf_token %}
+                            
+                            <label for="id_name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                            <label for="id_email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                            <label for="id_subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject">
+
+                            <label for="id_message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <h1 class="go_top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></h1>
+        <section>
+            <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                <h2>Monali Maheswata Mohanty</h2>
+                <p>Full Stack Developer creating digital experiences that make an impact.</p>
+                </div>
+
+                <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Career</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Django</a></li>
+                    <!-- <li><a href="#">Consulting</a></li> -->
+                </ul>
+                </div>
+
+                <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/Monamona2001"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/monali-maheswata-mohanty/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>monalimohanty200@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Monali. All rights reserved.</p>
+            </div>
+            </footer>
+
+
+        </section>         
+    </main>
+</body>
+</html>
